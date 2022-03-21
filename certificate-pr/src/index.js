@@ -10,6 +10,7 @@ import SlideComp from './components/SlideComp';
 import HeaderBottom from './components/HeaderBottom';
 import Component from './components/Component';
 import HeaderBottom1 from './components/HeaderBottom1';
+import SlideComp2 from './components/SlideComp2';
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
       <HeaderBottom />
       <Component />
       <HeaderBottom1 />
+      <SlideComp2 />
     </div>
   )
 }

@@ -1,6 +1,10 @@
 import React from 'react'
+import slide1 from '../assets/img/slide1__57732.jpg'
+import slide2 from '../assets/img/slide2.jpg'
+import slide3 from '../assets/img/slide3__55489.jpg'
 
 const Component = () => {
+  
   return (
     <div><section id="components">
     <div className="container custom-container">
@@ -93,18 +97,18 @@ const Component = () => {
         <div className="col-lg-6">
           <div className="slide owl-carousel owl-theme">
             <div className="img-area item">
-              <img src="./img/slide1__57732.jpg" alt="" />
+              <img src={slide1} alt="" />
             </div>
             <div className="img-area item">
-              <img src="./img/slide2.jpg" alt="" />
+              <img src={slide2} alt="" />
             </div>
             <div className="img-area item">
-              <img src="./img/slide3__55489.jpg" alt="" />
+              <img src={slide3} alt="" />
             </div>
           </div>
         </div>
         <div className="col-lg-3 reclam-area col-12">
-          <div className="reclam">
+          {/* <div className="reclam">
             <img src="./img/1.jpg" alt="" />
           </div>
           <div className="reclam">
@@ -112,7 +116,7 @@ const Component = () => {
           </div>
           <div className="reclam">
             <img src="./img/3.jpg" alt="" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
