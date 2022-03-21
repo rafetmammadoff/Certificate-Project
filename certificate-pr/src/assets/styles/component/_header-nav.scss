@@ -1,0 +1,119 @@
+.fashion-and-electronics{
+margin-top: 25px;
+.custom-container{
+    .row{
+        .fashion-img{
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+
+            .tittle{
+                padding: 15px 4px 15px 0;
+                margin: 0;
+                background: #ff5c00;
+                text-align: center;
+            }
+            &::after{
+                position: absolute;
+                z-index: 2;
+                content: "";
+                top: 49px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: white;
+                opacity: 0.5;
+                height: 100%;
+                width: 0%;
+                transition: 1s;
+
+
+            }
+
+            &:hover {
+               &::after{
+                   width: 100%;
+               }
+            }
+
+
+
+
+        }
+        .fashion-items{
+            padding: 0;
+            .row{
+                width: 100%;
+                margin-left: 0;
+                background: #f2f2f2;
+                .col-lg-2{
+                    padding:13px 0px 13px 0px;
+                    margin-left: 20px;
+                    
+                }
+                select{
+                    width: fit-content;
+                    padding: 6px 0 6px 0;
+                    margin-left: 5px;
+                    outline: none;
+                    border: none;
+                    background: #F2F2F2;
+                }
+            }
+            .components{
+                display: flex;
+                
+                .one-component{
+                    padding: 5px;
+                    .card{
+                        width: 100%;
+                        height: 100%;
+                        margin-bottom: 5px;
+                        .img-area{
+                            height: 60%;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: 72%;
+                            }
+                        }
+                        .text-area{
+                            width: 100%;
+                            height: 40%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .about{
+                                text-align: center;
+                                .marca{
+                                    margin: 0;
+
+                                }
+                                span{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 10px;
+                                    color: gray;
+                                    i{
+                                        margin-right: 7px;
+                                    }
+                                }
+                                .price{
+                                    color: #ff5c00;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+}
