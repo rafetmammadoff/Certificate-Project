@@ -38,7 +38,9 @@ for(var i =0; i < boxarr.length; i++){
         var boxunicindekiimage = box.querySelector('img');
         var clone = boxunicindekiimage.cloneNode(true);
         imgarea.appendChild(clone)
+        
     });
+
 }
 const Fashion = () => {
   return (

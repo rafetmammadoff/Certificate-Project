@@ -1,4 +1,17 @@
 import React from 'react'
+import sport from '../assets/img/8.jpg'
+import q1 from '../assets/img/q1.jpg'
+import q2 from '../assets/img/q2.jpg'
+import q3 from '../assets/img/q3.jpg'
+import q4 from '../assets/img/q4.jpg'
+import q5 from '../assets/img/q5.jpg'
+import q6 from '../assets/img/q6.jpg'
+import q7 from '../assets/img/q7.jpg'
+import q8 from '../assets/img/q8.jpg'
+import q9 from '../assets/img/q9.jpg'
+import q11 from '../assets/img/q11.jpg'
+
+
 
 const Sports = () => {
   return (
@@ -9,7 +22,7 @@ const Sports = () => {
               <h6 className="tittle">
                 SPORTS
               </h6>
-              <img src="./img/8.jpg" alt="" />
+              <img src={sport} alt="" />
             </div>
             <div className="col-12 col-lg-10 fashion-items col-md-10">
               <div className="row">
@@ -39,20 +52,10 @@ const Sports = () => {
                       <div className="box">
                         <i className="fas fa-search" />
                       </div>
-                      <div className="box-js">
-                        <div className="box-1">
-                          <img src="./img/sm1.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm2.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm3.jpg" alt="" />
-                        </div>
-                      </div>
+                      
                     </div>
                     <div className="img-area">
-                      <img src="./img/q1.jpg" alt="" />
+                      <img src={q1} alt="" />
                     </div>
                     <div className="text-area">
                       <div className="about">
@@ -83,20 +86,10 @@ const Sports = () => {
                       <div className="box">
                         <i className="fas fa-search" />
                       </div>
-                      <div className="box-js">
-                        <div className="box-1">
-                          <img src="./img/sm1.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm2.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm3.jpg" alt="" />
-                        </div>
-                      </div>
+                      
                     </div>
                     <div className="img-area">
-                      <img src="./img/q2.jpg" alt="" />
+                      <img src={q2} alt="" />
                     </div>
                     <div className="text-area">
                       <div className="about">
@@ -129,20 +122,10 @@ const Sports = () => {
                       <div className="box">
                         <i className="fas fa-search" />
                       </div>
-                      <div className="box-js">
-                        <div className="box-1">
-                          <img src="./img/sm1.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm2.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm3.jpg" alt="" />
-                        </div>
-                      </div>
+                      
                     </div>
                     <div className="img-area">
-                      <img src="./img/q3.jpg" alt="" />
+                      <img src={q3} alt="" />
                     </div>
                     <div className="text-area">
                       <div className="about">
@@ -173,20 +156,10 @@ const Sports = () => {
                       <div className="box">
                         <i className="fas fa-search" />
                       </div>
-                      <div className="box-js">
-                        <div className="box-1">
-                          <img src="./img/sm1.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm2.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm3.jpg" alt="" />
-                        </div>
-                      </div>
+                      
                     </div>
                     <div className="img-area">
-                      <img src="./img/q4.jpg" alt="" />
+                      <img src={q4} alt="" />
                     </div>
                     <div className="text-area">
                       <div className="about">
@@ -219,20 +192,10 @@ const Sports = () => {
                       <div className="box">
                         <i className="fas fa-search" />
                       </div>
-                      <div className="box-js">
-                        <div className="box-1">
-                          <img src="./img/sm1.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm2.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm3.jpg" alt="" />
-                        </div>
-                      </div>
+                      
                     </div>
                     <div className="img-area">
-                      <img src="./img/q5.jpg" alt="" />
+                      <img src={q5} alt="" />
                     </div>
                     <div className="text-area">
                       <div className="about">
@@ -263,20 +226,10 @@ const Sports = () => {
                       <div className="box">
                         <i className="fas fa-search" />
                       </div>
-                      <div className="box-js">
-                        <div className="box-1">
-                          <img src="./img/sm1.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm2.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm3.jpg" alt="" />
-                        </div>
-                      </div>
+                      
                     </div>
                     <div className="img-area">
-                      <img src="./img/q6.jpg" alt="" />
+                      <img src={q6} alt="" />
                     </div>
                     <div className="text-area">
                       <div className="about">
@@ -309,20 +262,10 @@ const Sports = () => {
                       <div className="box">
                         <i className="fas fa-search" />
                       </div>
-                      <div className="box-js">
-                        <div className="box-1">
-                          <img src="./img/sm1.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm2.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm3.jpg" alt="" />
-                        </div>
-                      </div>
+                      
                     </div>
                     <div className="img-area">
-                      <img src="./img/q7.jpg" alt="" />
+                      <img src={q7} alt="" />
                     </div>
                     <div className="text-area">
                       <div className="about">
@@ -353,20 +296,10 @@ const Sports = () => {
                       <div className="box">
                         <i className="fas fa-search" />
                       </div>
-                      <div className="box-js">
-                        <div className="box-1">
-                          <img src="./img/sm1.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm2.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm3.jpg" alt="" />
-                        </div>
-                      </div>
+                      
                     </div>
                     <div className="img-area">
-                      <img src="./img/q8.jpg" alt="" />
+                      <img src={q8} alt="" />
                     </div>
                     <div className="text-area">
                       <div className="about">
@@ -399,20 +332,10 @@ const Sports = () => {
                       <div className="box">
                         <i className="fas fa-search" />
                       </div>
-                      <div className="box-js">
-                        <div className="box-1">
-                          <img src="./img/sm1.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm2.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm3.jpg" alt="" />
-                        </div>
-                      </div>
+                      
                     </div>
                     <div className="img-area">
-                      <img src="./img/q9.jpg" alt="" />
+                      <img src={q9} alt="" />
                     </div>
                     <div className="text-area">
                       <div className="about">
@@ -443,20 +366,10 @@ const Sports = () => {
                       <div className="box">
                         <i className="fas fa-search" />
                       </div>
-                      <div className="box-js">
-                        <div className="box-1">
-                          <img src="./img/sm1.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm2.jpg" alt="" />
-                        </div>
-                        <div className="box-1">
-                          <img src="./img/sm3.jpg" alt="" />
-                        </div>
-                      </div>
+                      
                     </div>
                     <div className="img-area">
-                      <img src="./img/q11.jpg" alt="" />
+                      <img src={q11} alt="" />
                     </div>
                     <div className="text-area">
                       <div className="about">

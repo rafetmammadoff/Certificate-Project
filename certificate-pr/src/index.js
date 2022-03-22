@@ -16,6 +16,8 @@ import TodayDeals from './components/TodayDeals';
 import Somewhere from './components/Somewhere';
 import Fashion from './components/Fashion';
 import Electronic from './components/Electronic';
+import Sports from './components/Sports';
+import Portland from './components/Portland';
 
 
 
@@ -36,6 +38,8 @@ const App = () => {
       <Somewhere />
       <Fashion />
       <Electronic />
+      <Sports />
+      <Portland />
     </div>
   )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import e11 from '../assets/img/e11.jpg'
-import e from '../assets/img/e.jpg'
 import e6 from '../assets/img/e6.jpg'
 import e10 from '../assets/img/e10.jpg'
 import e12 from '../assets/img/e12.jpg'
@@ -26,7 +25,6 @@ import e83 from '../assets/img/e83.jpg'
 import e91 from '../assets/img/e91.jpg'
 import e92 from '../assets/img/e92.jpg'
 import e93 from '../assets/img/e93.jpg'
-import ee from '../assets/img/ee.jpg'
 import e2 from '../assets/img/7.jpg'
 
 var boxarr = document.getElementsByClassName('box-1');
