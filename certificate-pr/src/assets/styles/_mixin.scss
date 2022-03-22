@@ -39,6 +39,9 @@
                 transform: translateX(-20px);
                 opacity: 0;
                 transition: 1s;
+                img{
+                    width: 100%;
+                }
             }
         }
         .bottom{

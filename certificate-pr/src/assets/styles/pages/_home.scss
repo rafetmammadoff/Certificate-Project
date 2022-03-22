@@ -460,6 +460,10 @@
                 }
             }
             .col-lg-7{
+                display: flex;
+                align-items: baseline;
+                height: 42px;
+                
                 form{
                     width: 100%;
                     position: relative;
@@ -586,14 +590,13 @@
             }
             .col-lg-6{
                 padding: 0;
-               .slide{
-                   height: 100%;
+               
                    .img-area{
                        height: 100%;
                     img{
                         height: 100%;
                     }
-                }
+                
                }
                .owl-stage-outer{
                    height: 100%;
@@ -734,6 +737,9 @@
             .first-slide-area{
                 padding: 10px;
                 position: relative;
+                .owl-carousel{
+                    display: flex !important;
+                }
                 .marca{
                     width: 145px;
                     height: 43px;
@@ -840,6 +846,7 @@
                     border: 1px solid gray;
                     display: flex;
                     border-top: none;
+                    
                     .owl-item{
                         display: flex !important;
                         align-items: center;
@@ -887,6 +894,9 @@
                 
                 padding: 0 10px 0 10px ;
                 border-top: none;
+                .owl-carousel{
+                    display: block !important;
+                }
                 
                 .tittle{
                     display: block;

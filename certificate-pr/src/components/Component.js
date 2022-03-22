@@ -2,8 +2,33 @@ import React from 'react'
 import slide1 from '../assets/img/slide1__57732.jpg'
 import slide2 from '../assets/img/slide2.jpg'
 import slide3 from '../assets/img/slide3__55489.jpg'
+import img1 from '../assets/img/1.jpg'
+import img2 from '../assets/img/2.jpg'
+import img3 from '../assets/img/3.jpg'
+import $ from 'jquery'; 
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+
 
 const Component = () => {
+  React.state= {
+    responsive:{
+        0: {
+            items: 1,
+        },
+        450: {
+            items: 1,
+        },
+        600: {
+            items: 1,
+        },
+        1000: {
+            items: 1,
+        },
+    },
+  }
   
   return (
     <div><section id="components">
@@ -95,7 +120,7 @@ const Component = () => {
           </div>
         </div>
         <div className="col-lg-6">
-          <div className="slide owl-carousel owl-theme">
+          {/* <div className="slide owl-carousel owl-theme">
             <div className="img-area item">
               <img src={slide1} alt="" />
             </div>
@@ -105,18 +130,38 @@ const Component = () => {
             <div className="img-area item">
               <img src={slide3} alt="" />
             </div>
-          </div>
+          </div> */}
+          <OwlCarousel className={'owl-theme'}
+    loop={true}
+    margin={10}
+    nav={false}
+    dots={false}
+    autoplay={true}
+    autoplayTimeout={2000}
+    items={4}
+    responsive={React.state.responsive} >
+    
+          <div className="img-area item">
+              <img src={slide1} alt="" />
+            </div>
+            <div className="img-area item">
+              <img src={slide2} alt="" />
+            </div>
+            <div className="img-area item">
+              <img src={slide3} alt="" />
+            </div>
+          </OwlCarousel>
         </div>
         <div className="col-lg-3 reclam-area col-12">
-          {/* <div className="reclam">
-            <img src="./img/1.jpg" alt="" />
+          <div className="reclam">
+            <img src={img1} alt="" />
           </div>
           <div className="reclam">
-            <img src="./img/2.jpg" alt="" />
+            <img src={img2} alt="" />
           </div>
           <div className="reclam">
-            <img src="./img/3.jpg" alt="" />
-          </div> */}
+            <img src={img3} alt="" />
+          </div>
         </div>
       </div>
     </div>

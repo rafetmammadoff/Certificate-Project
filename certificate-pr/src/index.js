@@ -11,6 +11,11 @@ import HeaderBottom from './components/HeaderBottom';
 import Component from './components/Component';
 import HeaderBottom1 from './components/HeaderBottom1';
 import SlideComp2 from './components/SlideComp2';
+import Featured from './components/Featured';
+import TodayDeals from './components/TodayDeals';
+import Somewhere from './components/Somewhere';
+import Fashion from './components/Fashion';
+import Electronic from './components/Electronic';
 
 
 
@@ -23,9 +28,14 @@ const App = () => {
       <SlideComp />
       <Nav />
       <HeaderBottom />
-      <Component />
       <HeaderBottom1 />
+      <Component />
       <SlideComp2 />
+      <Featured />
+      <TodayDeals />
+      <Somewhere />
+      <Fashion />
+      <Electronic />
     </div>
   )
 }
