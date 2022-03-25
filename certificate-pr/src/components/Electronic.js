@@ -26,7 +26,9 @@ import e91 from '../assets/img/e91.jpg'
 import e92 from '../assets/img/e92.jpg'
 import e93 from '../assets/img/e93.jpg'
 import e2 from '../assets/img/7.jpg'
-
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 var boxarr = document.getElementsByClassName('box-1');
 
 for(var i =0; i < boxarr.length; i++){
@@ -45,6 +47,25 @@ for(var i =0; i < boxarr.length; i++){
 }
 
 const Electronic = () => {
+
+  React.stateElectronic= {
+    responsive:{
+      0:{
+        items:1
+    },
+    400:{
+        items:2
+
+    },
+    600:{
+        items:3
+    },
+    1000:{
+        items:5
+    }
+    },
+  }
+
   return (
     <section id="electronic" className="fashion-and-electronics">
         <div className="container custom-container owl-comp">
@@ -63,6 +84,15 @@ const Electronic = () => {
                 </select>
               </div>
               <div className="components owl-carousel owl-theme fashion-slide">
+              <OwlCarousel className={'owl-theme'}
+    loop={true}
+    margin={10}
+    nav={false}
+    dots={false}
+    autoplay={false}
+    autoplayTimeout={2000}
+    items={4}
+    responsive={React.stateElectronic.responsive} >
                 <div className="one-component item">
                   <div className="card">
                     <div className="my-layer">
@@ -491,6 +521,7 @@ const Electronic = () => {
                     </div>
                   </div>
                 </div>
+                </OwlCarousel>
               </div>
             </div>
             <div className="col-12 col-lg-2 fashion-img col-md-2">

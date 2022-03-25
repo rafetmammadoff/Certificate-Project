@@ -1077,6 +1077,9 @@
 }
 #new-production{
     margin-top: 30px;
+    .owl-carousel{
+        display: flex;
+    }
     .custom-container{
         padding: 0;
         .big-row{
@@ -1121,7 +1124,7 @@
                         &:hover{
                             
                             &::after{
-                                width: 87% !important;
+                                width: 100% !important;
                             }
                             
     

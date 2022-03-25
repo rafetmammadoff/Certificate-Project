@@ -122,8 +122,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 10px;
   -webkit-transition: 1s;
   transition: 1s;
+  cursor: pointer;
 }
 
 .card:hover .my-layer .box {
@@ -151,6 +153,12 @@
   opacity: 1;
   -webkit-transform: translateY(102px);
           transform: translateY(102px);
+}
+
+.owl-carousel {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .general-contain {
@@ -1396,6 +1404,12 @@
   margin-top: 30px;
 }
 
+#new-production .owl-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #new-production .custom-container {
   padding: 0;
 }
@@ -1446,7 +1460,7 @@
 }
 
 #new-production .custom-container .big-row .left-blog .small-row .sm-left-img:hover::after {
-  width: 87% !important;
+  width: 100% !important;
 }
 
 #new-production .custom-container .big-row .left-blog .small-row .sm-right-slide {
@@ -2133,6 +2147,12 @@ a {
   opacity: 0 !important;
 }
 
+.rafet {
+  background-color: orangered !important;
+  color: white !important;
+  border: 1px solid white !important;
+}
+
 .fashion-and-electronics {
   margin-top: 25px;
 }
@@ -2209,7 +2229,6 @@ a {
 
 .fashion-and-electronics .custom-container .row .fashion-items .components .one-component .card {
   width: 100%;
-  height: 100%;
   margin-bottom: 5px;
 }
 

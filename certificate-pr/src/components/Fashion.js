@@ -23,26 +23,34 @@ import f92 from '../assets/img/f92.jpg'
 import f101 from '../assets/img/f101.jpg'
 import f102 from '../assets/img/f102.jpg'
 import f103 from '../assets/img/f103.jpg'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-var boxarr = document.getElementsByClassName('box-1');
 
-for(var i =0; i < boxarr.length; i++){
-    let box = boxarr[i]
-    box.addEventListener("mouseover", function() {
-        var parent = box.closest(".card");
-        var imgarea = parent.querySelector('.img-area')
-        var img = imgarea.querySelector('img')    
-        if(img != null){
-            img.remove();
-        }
-        var boxunicindekiimage = box.querySelector('img');
-        var clone = boxunicindekiimage.cloneNode(true);
-        imgarea.appendChild(clone)
-        
-    });
 
-}
+
+
+
 const Fashion = () => {
+
+  React.stateFashion= {
+    responsive:{
+      0:{
+        items:1
+    },
+    400:{
+        items:2
+
+    },
+    600:{
+        items:3
+    },
+    1000:{
+        items:5
+    }
+    },
+  }
   return (
     <section id="fashion" className="fashion-and-electronics responsive">
         <div className="container custom-container owl-comp">
@@ -67,6 +75,15 @@ const Fashion = () => {
                 </select>
               </div>
               <div className="components owl-carousel owl-theme fashion-slide">
+              <OwlCarousel className={'owl-theme'}
+    loop={true}
+    margin={10}
+    nav={false}
+    dots={false}
+    autoplay={false}
+    autoplayTimeout={2000}
+    items={4}
+    responsive={React.stateFashion.responsive} >
                 <div className="one-component item">
                   <div className="card">
                     <div className="my-layer">
@@ -496,6 +513,7 @@ const Fashion = () => {
                     </div>
                   </div>
                 </div>
+                </OwlCarousel>
               </div>
             </div>
           </div>
@@ -503,5 +521,33 @@ const Fashion = () => {
       </section>
   )
 }
+
+
+document.addEventListener("DOMContentLoaded", function(e) {
+  var boxarr = document.getElementsByClassName('box-1');
+
+  console.log(boxarr)
+  console.log(boxarr.length)
+
+
+  for(var i =0; i < boxarr.length; i++){
+    console.log("asa")
+    let box = boxarr[i]
+    box.addEventListener("mouseover", function() {
+        var parent = box.closest(".card");
+        var imgarea = parent.querySelector('.img-area')
+        var img = imgarea.querySelector('img')    
+        if(img != null){
+            img.remove();
+        }
+        var boxunicindekiimage = box.querySelector('img');
+        var clone = boxunicindekiimage.cloneNode(true);
+        imgarea.appendChild(clone)
+        
+        
+    });
+
+  }
+});
 
 export default Fashion

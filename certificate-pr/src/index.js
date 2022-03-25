@@ -18,7 +18,11 @@ import Fashion from './components/Fashion';
 import Electronic from './components/Electronic';
 import Sports from './components/Sports';
 import Portland from './components/Portland';
-
+import './main'
+import NewProduction from './components/NewProduction';
+import FromOurBlog from './components/FromOurBlog';
+import Partners from './components/Partners';
+import Contact from './components/Contact';
 
 
 
@@ -40,6 +44,10 @@ const App = () => {
       <Electronic />
       <Sports />
       <Portland />
+      <NewProduction />
+      <FromOurBlog />
+      <Partners />
+      <Contact />
     </div>
   )
 }

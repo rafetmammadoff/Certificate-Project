@@ -10,10 +10,29 @@ import q7 from '../assets/img/q7.jpg'
 import q8 from '../assets/img/q8.jpg'
 import q9 from '../assets/img/q9.jpg'
 import q11 from '../assets/img/q11.jpg'
-
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 
 const Sports = () => {
+  React.stateSports= {
+    responsive:{
+      0:{
+        items:1
+    },
+    400:{
+        items:2
+
+    },
+    600:{
+        items:3
+    },
+    1000:{
+        items:5
+    }
+    },
+  }
   return (
     <section id="sports" className="fashion-and-electronics responsive">
         <div className="container custom-container owl-comp">
@@ -38,6 +57,15 @@ const Sports = () => {
                 </select>
               </div>
               <div className="components owl-carousel owl-theme fashion-slide">
+              <OwlCarousel className={'owl-theme'}
+    loop={true}
+    margin={10}
+    nav={false}
+    dots={false}
+    autoplay={false}
+    autoplayTimeout={2000}
+    
+    responsive={React.stateSports.responsive} >
                 <div className="one-component item">
                   <div className="card">
                     <div className="my-layer">
@@ -388,6 +416,7 @@ const Sports = () => {
                     </div>
                   </div>
                 </div>
+                </OwlCarousel>
               </div>
             </div>
           </div>
