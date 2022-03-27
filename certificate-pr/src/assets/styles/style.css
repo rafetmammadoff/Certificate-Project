@@ -22,6 +22,8 @@
           justify-content: center;
   -webkit-transition: 1s;
   transition: 1s;
+  opacity: 0;
+  transition: 1s;
 }
 
 .card .my-layer .box {
@@ -128,6 +130,15 @@
   cursor: pointer;
 }
 
+.card:hover .my-layer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
 .card:hover .my-layer .box {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -153,6 +164,16 @@
   opacity: 1;
   -webkit-transform: translateY(102px);
           transform: translateY(102px);
+}
+
+.card:hover .text-area {
+  height: 60px !important;
+}
+
+.card:hover .text-area .about {
+  display: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .owl-carousel {

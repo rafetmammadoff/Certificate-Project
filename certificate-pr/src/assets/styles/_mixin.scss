@@ -13,6 +13,9 @@
         align-items: center;
         justify-content: center;
         transition: 1s;
+        
+        opacity: 0;
+        transition: 1s;
         .box{
             width: 40px;
             height: 40px;
@@ -86,25 +89,38 @@
 
     }
 
-    &:hover .my-layer{
-        
-
-        .box{
-            opacity: 1;
-            transform: translateY(0px);
-            
+    &:hover {
+        .my-layer{
             display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .box-1{
+            transition: 1s;
             opacity: 1;
-            transform: translateX(0px);
+
+            .box{
+                opacity: 1;
+                transform: translateY(0px);
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .box-1{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+            .bottom{
+            opacity: 1;
+            transform: translateY(102px);
+            
+            }
         }
-        .bottom{
-           opacity: 1;
-           transform: translateY(102px);
+        .text-area{
+            height: 60px !important;
+            .about{
+                display: none;
+                transition: 1s;
+            }
         }
+        
         
 
     }
