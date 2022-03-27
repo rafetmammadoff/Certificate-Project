@@ -23,6 +23,10 @@ import NewProduction from './components/NewProduction';
 import FromOurBlog from './components/FromOurBlog';
 import Partners from './components/Partners';
 import Contact from './components/Contact';
+import FooterTop from './components/FooterTop';
+import FooterNav from './components/FooterNav';
+import SignUp from './components/SignUp';
+import FooterBottom from './components/FooterBottom';
 
 
 
@@ -48,6 +52,10 @@ const App = () => {
       <FromOurBlog />
       <Partners />
       <Contact />
+      <FooterTop />
+      <FooterNav />
+      <SignUp />
+      <FooterBottom />
     </div>
   )
 }

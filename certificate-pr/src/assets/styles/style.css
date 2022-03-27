@@ -830,7 +830,6 @@
 
 #components {
   background: #F2F2F2;
-  height: 100%;
 }
 
 #components .custom-container .row .none {
@@ -894,6 +893,10 @@
 
 #components .custom-container .row .col-lg-6 {
   padding: 0;
+}
+
+#components .custom-container .row .col-lg-6 .owl-carousel {
+  height: 100%;
 }
 
 #components .custom-container .row .col-lg-6 .img-area {
