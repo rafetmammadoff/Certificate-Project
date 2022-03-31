@@ -131,3 +131,26 @@
 .owl-carousel{
     display: flex !important;
 }
+
+
+.bascet-card{
+    .card{
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+
+    .quantity{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .update{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .img-area{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+}

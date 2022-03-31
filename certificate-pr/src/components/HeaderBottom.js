@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
+import Bascet from './Bascet';
 const HeaderBottom = () => {
 
 
@@ -30,7 +31,7 @@ const HeaderBottom = () => {
             </div>
             <div className="col-lg-2">
               <div className="circle"><i className="far fa-heart" /></div>
-              <div className="circle"><i className="fas fa-shopping-cart" /></div>
+              <div className="circle"><a href='/b'><i className="fas fa-shopping-cart" /></a></div>
             </div>
           </div>
         </div>
