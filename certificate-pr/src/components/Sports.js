@@ -1,19 +1,42 @@
 import React from 'react'
 import sport from '../assets/img/8.jpg'
-import q1 from '../assets/img/q1.jpg'
-import q2 from '../assets/img/q2.jpg'
-import q3 from '../assets/img/q3.jpg'
-import q4 from '../assets/img/q4.jpg'
-import q5 from '../assets/img/q5.jpg'
-import q6 from '../assets/img/q6.jpg'
-import q7 from '../assets/img/q7.jpg'
-import q8 from '../assets/img/q8.jpg'
-import q9 from '../assets/img/q9.jpg'
-import q11 from '../assets/img/q11.jpg'
+
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import exportedData from './data'
+import OneComponent from './OneComponent'
+document.addEventListener("DOMContentLoaded", function(e) {
+  var boxarr = document.getElementsByClassName('box-1');
 
+ 
+
+
+  for(var i =0; i < boxarr.length; i++){
+    
+    let box = boxarr[i]
+    
+    box.addEventListener("mouseover", function() {
+      var boxunicindekiimage = box.querySelector('img');
+        if (boxunicindekiimage.getAttribute('src') != null) {
+          
+            var parent = box.closest(".card");
+          var imgarea = parent.querySelector('.img-area')
+          var img = imgarea.querySelector('img')    
+          if(img != null){
+              img.remove();
+          }
+          
+          var clone = boxunicindekiimage.cloneNode(true);
+          imgarea.appendChild(clone)
+        
+        }
+        
+        
+    });
+
+  }
+});
 
 const Sports = () => {
   React.stateSports= {
@@ -44,11 +67,11 @@ const Sports = () => {
               <img src={sport} alt="" />
             </div>
             <div className="col-12 col-lg-10 fashion-items col-md-10">
-              <div className="row">
-                <div className="col-lg-2 col-md-2 ">SportKet</div>
-                <div className="col-lg-2 col-md-2 ">SportBag</div>
-                <div className="col-lg-2 col-md-2 ">SportTshirt</div>
-                <div className="col-lg-2 col-md-2 ">SportShort</div>
+              <div className="row dark-class">
+                <div className="col-lg-2 col-md-2 white-text">SportKet</div>
+                <div className="col-lg-2 col-md-2 white-text">SportBag</div>
+                <div className="col-lg-2 col-md-2 white-text">SportTshirt</div>
+                <div className="col-lg-2 col-md-2 white-text">SportShort</div>
                 <select>
                   <option value>SportKet</option>
                   <option value>SportBag</option>
@@ -66,7 +89,19 @@ const Sports = () => {
     autoplayTimeout={2000}
     
     responsive={React.stateSports.responsive} >
-                <div className="one-component item">
+
+                {exportedData.sports.map((oneDimensionArray,index)=>{
+                  return(
+                    <OneComponent 
+                    oneDimensionArray={oneDimensionArray}
+                    key={index}
+                  />
+                  )
+                })}
+
+
+
+                {/* <div className="one-component item">
                   <div className="card">
                     <div className="my-layer">
                       <div className="bottom">
@@ -415,7 +450,7 @@ const Sports = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 </OwlCarousel>
               </div>
             </div>

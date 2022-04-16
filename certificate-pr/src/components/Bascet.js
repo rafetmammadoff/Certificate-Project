@@ -21,7 +21,8 @@ const Bascet = () => {
                         
                             {items.map((product,index)=>{
                                 return(
-                                    <div className='col-2 card' key={index}>
+                                    <div className='col-12 col-md-6 col-lg-3 col-xl-2  card' key={index}>
+                                        <div className="card-item">
                                         <div className='img-area'><img src={product.img1} style={{height:"6rem"}} alt="" /></div>
                                         <div className='text-center'>{product.about}</div>
                                         <div className='text-center'>{product.price}$</div>
@@ -30,6 +31,7 @@ const Bascet = () => {
                                         <button className='btn btn-danger ms-2' onClick={()=>updateItemQuantity(product.id, product.quantity -1)}>-</button>
                                         <button className='btn btn-success ms-2' onClick={()=>updateItemQuantity(product.id, product.quantity +1)}>+</button>
                                         </div>
+                                        </div>
                                     </div>
                                 )
                             })}
@@ -37,6 +39,8 @@ const Bascet = () => {
                     
                 </div>
                 <div className="mt-3 col-auto ms-auto d-flex align-items-center justify-content-center w-100">
+                <a className='me-5' href="/">--Continue shopping</a>
+
                     <button className='btn btn-danger' onClick={()=>{emptyCart()}}>Clear Cart</button>
                     <button className='btn btn-success ms-5'>Buy Now</button>
                 </div>

@@ -5,7 +5,7 @@ const OneComponent = ({oneDimensionArray}) => {
     const {addItem} = useCart();
     return (
         <div className={'one-component item'}>
-            {/*content for link, img, title, description here */}
+            {/* content for link, img, title, description here */}
             
              {oneDimensionArray.map((product,index) => 
                 
@@ -28,7 +28,7 @@ const OneComponent = ({oneDimensionArray}) => {
                         </div>
                     </div>
                     <div className="bottom">
-                        <button onClick={()=>addItem(product)} className="box-b1">
+                        <button onClick={()=>{addItem(product); alert(product.about + " sebete elave edildi",1000)}} className="box-b1">
                         Add to card
                         </button>
                         <div className="box-b2">

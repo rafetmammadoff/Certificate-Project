@@ -2,11 +2,11 @@ import React from 'react'
 
 const SignUp = () => {
   return (
-    <section id="sign-up">
+    <section className='dark-class' id="sign-up">
         <div className="container custom-container">
           <div className="row">
             <div className="col-lg-3 about">
-              <span>SIGN UP FOR NEWSLETTER</span>
+              <span className='white-text'>SIGN UP FOR NEWSLETTER</span>
             </div>
             <div className="col-lg-6 inp">
               <form>
@@ -15,7 +15,7 @@ const SignUp = () => {
               </form>
             </div>
             <div className="col-lg-3 web">
-              <span>FOLLOW US</span>
+              <span className='white-text'>FOLLOW US</span>
               <div className="web-icons">
                 <div className="box">
                   <i className="fab fa-facebook-f" />

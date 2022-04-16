@@ -22,7 +22,7 @@ const AppRouter = () => {
       <CartProvider>
     <BrowserRouter>
     <Route path="/" exact component={Home}></Route>
-    <Route path="/b" component={Bascet}></Route>
+    <Route path="/bascet" component={Bascet}></Route>
     </BrowserRouter>
     </CartProvider>
     

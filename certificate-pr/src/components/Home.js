@@ -18,7 +18,6 @@ import FromOurBlog from './FromOurBlog';
 import Partners from './Partners';
 import Contact from './Contact';
 import FooterTop from './FooterTop';
-import FooterNav from './FooterNav';
 import SignUp from './SignUp';
 import FooterBottom from './FooterBottom';
 import Nav from './Nav';
@@ -27,7 +26,7 @@ import { CartProvider } from 'react-use-cart';
 import Bascet from './Bascet';
 const Home = () => {
   return (
-    <div className='general-contain'>
+    <div className='general-contain dark-class'>
       
       <CartProvider>
       <OpenPage />
@@ -51,10 +50,9 @@ const Home = () => {
       <Partners />
       <Contact />
       <FooterTop />
-      <FooterNav />
+      
       <SignUp />
       <FooterBottom />
-      <Bascet />
       </CartProvider>
       
     </div>

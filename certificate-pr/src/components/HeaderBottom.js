@@ -31,7 +31,7 @@ const HeaderBottom = () => {
             </div>
             <div className="col-lg-2">
               <div className="circle"><i className="far fa-heart" /></div>
-              <div className="circle"><a href='/b'><i className="fas fa-shopping-cart" /></a></div>
+              <div className="circle"><a href='/bascet'><i className="fas fa-shopping-cart" /></a></div>
             </div>
           </div>
         </div>

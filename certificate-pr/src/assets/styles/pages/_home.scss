@@ -734,6 +734,7 @@
 }
 #today-deals{
     margin-top: 40px;
+    margin-bottom: 40px;
     .custom-container{
         .big-row{
             
@@ -1264,6 +1265,7 @@
 #contact{
     margin-top: 80px;
     background-color: #ff5c00;
+    
     .custom-container{
         .row{
             padding: 16px 0 16px 0;
@@ -1307,7 +1309,7 @@
 }
 #footer-top{
     background-color: #f0f0f0;
-    padding-top: 30px;
+    padding-top: 50px;
     .custom-container{
         .row{
             .first-component{
@@ -1315,7 +1317,7 @@
                     font-size: 15px;
                     color: #222222;
                     font-weight: 600;
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }
                 p{
                     font-size: 13px;

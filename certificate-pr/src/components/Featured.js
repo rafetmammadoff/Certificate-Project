@@ -32,7 +32,7 @@ const Featured = () => {
     <section id="featured">
         <div className="container custom-container">
           <div className="head">
-            <h5>FEATURED CATEGORIES</h5>
+            <h5 className='white-text'>FEATURED CATEGORIES</h5>
             <div className="line">
               <div className="sm-line">
               </div>
@@ -53,7 +53,7 @@ const Featured = () => {
                 <div className="img-area">
                   <img src={cate1} alt="" />
                 </div>
-                <div className="about">
+                <div className="about white-text">
                   WATCHES
                 </div>
               </div>
@@ -63,7 +63,7 @@ const Featured = () => {
                 <div className="img-area">
                   <img src={cate2} alt="" />
                 </div>
-                <div className="about">
+                <div className="about white-text">
                   BAGS
                 </div>
               </div>
@@ -73,7 +73,7 @@ const Featured = () => {
                 <div className="img-area">
                   <img src={cate3} alt="" />
                 </div>
-                <div className="about">
+                <div className="about white-text">
                   ACCESSORIES
                 </div>
               </div>
@@ -83,7 +83,7 @@ const Featured = () => {
                 <div className="img-area">
                   <img src={cate4} alt="" />
                 </div>
-                <div className="about">
+                <div className="about white-text">
                   SHOES
                 </div>
               </div>
@@ -93,7 +93,7 @@ const Featured = () => {
                 <div className="img-area">
                   <img src={cate5} alt="" />
                 </div>
-                <div className="about">
+                <div className="about white-text">
                   FASHION
                 </div>
               </div>

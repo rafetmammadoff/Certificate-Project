@@ -11,20 +11,20 @@ const HeaderBottom1 = () => {
     <div className="container custom-container">
       <div className="row">
         <div className="col-3">
-          <i className="fas fa-home" />
-          <p>Home</p>
+          <i className="fas fa-home white-text mb-1" />
+          <p className='white-text'>Home</p>
         </div>
         <div className="col-3">
-          <i className="fas fa-shopping-cart" />
-          <p>Cart</p>
+          <div className="circle mb-1"><a href='/bascet'><i className="fas fa-shopping-cart" /></a></div>
+          <p className='white-text'>Cards</p>
         </div>
         <div className="col-3">
-          <i className="fas fa-user" />
-          <p>Sign In</p>
+          <i className="fas fa-user white-text mb-1" />
+          <p className='white-text'>Sign In</p>
         </div>
         <div onClick={myFunction2} className="col-3" id="slider-btn-2">
-          <i className="fas fa-ellipsis-h" />
-          <p>More</p>
+          <i className="fas fa-ellipsis-h white-text mb-1" />
+          <p className='white-text'>More</p>
         </div>
       </div>
     </div>

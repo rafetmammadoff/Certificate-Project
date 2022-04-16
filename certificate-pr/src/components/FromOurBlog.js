@@ -24,7 +24,7 @@ const FromOurBlog = () => {
     <section id="from-our-blog">
         <div className="container custom-container">
           <div className="head">
-            <h5>FEATURED CATEGORIES</h5>
+            <h5 className='white-text'>FEATURED CATEGORIES</h5>
             <div className="line">
               <div className="sm-line">
               </div>

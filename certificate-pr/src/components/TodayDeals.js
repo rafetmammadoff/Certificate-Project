@@ -72,7 +72,7 @@ const TodayDeals = () => {
   return (
     <section id="today-deals">
         <div className="container custom-container">
-          <div className="row big-row">
+          <div className="row big-row white-back">
             <div className="col-lg-9 first-slide-area ">
               <div className="marca">TODAY DEALS</div>
               <div className="my-slider owl-carousel owl-theme">

@@ -6,7 +6,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import data from './data'
 import Card from './Card'
-import twoDimensionArray from './data'
+import exportedData from './data'
 import OneComponent from './OneComponent'
 
 
@@ -45,11 +45,11 @@ const Fashion = () => {
               <img src={Fashion1} alt="" />
             </div>
             <div className="col-12 col-lg-10 fashion-items col-md-10">
-              <div className="row">
-                <div className="col-lg-2 col-md-2 ">ModernBags</div>
-                <div className="col-lg-2 col-md-2 ">Jeans</div>
-                <div className="col-lg-2 col-md-2 ">Tshirt</div>
-                <div className="col-lg-2 col-md-2 ">Shoes</div>
+              <div className="row dark-class">
+                <div className="col-lg-2 col-md-2 white-text">ModernBags</div>
+                <div className="col-lg-2 col-md-2 white-text">Jeans</div>
+                <div className="col-lg-2 col-md-2 white-text">Tshirt</div>
+                <div className="col-lg-2 col-md-2 white-text">Shoes</div>
                 <select>
                   <option value>ModernBags</option>
                   <option value>Jeans</option>
@@ -67,7 +67,7 @@ const Fashion = () => {
     autoplayTimeout={2000}
     items={4}
     responsive={React.stateFashion.responsive} >
-                  {twoDimensionArray.map((oneDimensionArray,index)=>{
+                  {exportedData.fashions.map((oneDimensionArray,index)=>{
                        return ( 
                        <OneComponent 
                        oneDimensionArray={oneDimensionArray}                                     
@@ -435,16 +435,22 @@ document.addEventListener("DOMContentLoaded", function(e) {
   for(var i =0; i < boxarr.length; i++){
     
     let box = boxarr[i]
+    
     box.addEventListener("mouseover", function() {
-        var parent = box.closest(".card");
-        var imgarea = parent.querySelector('.img-area')
-        var img = imgarea.querySelector('img')    
-        if(img != null){
-            img.remove();
+      var boxunicindekiimage = box.querySelector('img');
+        if (boxunicindekiimage.getAttribute('src') != null) {
+          
+            var parent = box.closest(".card");
+          var imgarea = parent.querySelector('.img-area')
+          var img = imgarea.querySelector('img')    
+          if(img != null){
+              img.remove();
+          }
+          
+          var clone = boxunicindekiimage.cloneNode(true);
+          imgarea.appendChild(clone)
+        
         }
-        var boxunicindekiimage = box.querySelector('img');
-        var clone = boxunicindekiimage.cloneNode(true);
-        imgarea.appendChild(clone)
         
         
     });

@@ -183,11 +183,28 @@
 }
 
 .bascet-card .card {
-  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
 }
 
-.bascet-card .card .quantity {
+.bascet-card .card .card-item {
+  width: 95%;
+  height: 95%;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.bascet-card .card .card-item .quantity {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +214,7 @@
   margin-bottom: 15px;
 }
 
-.bascet-card .card .update {
+.bascet-card .card .card-item .update {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,7 +224,7 @@
   margin-bottom: 15px;
 }
 
-.bascet-card .card .img-area {
+.bascet-card .card .card-item .img-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,6 +232,18 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 10px;
+}
+
+.dark {
+  background-color: #0e0e0e !important;
+}
+
+.white {
+  color: white !important;
+}
+
+.backg-white {
+  background-color: white !important;
 }
 
 .general-contain {
@@ -1095,6 +1124,7 @@
 
 #today-deals {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #today-deals .custom-container .big-row .first-slide-area {
@@ -1706,14 +1736,14 @@
 
 #footer-top {
   background-color: #f0f0f0;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 #footer-top .custom-container .row .first-component .tittle {
   font-size: 15px;
   color: #222222;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #footer-top .custom-container .row .first-component p {
@@ -2210,6 +2240,12 @@ a {
   background-color: orangered !important;
   color: white !important;
   border: 1px solid white !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .bascet-card .card {
+    margin-right: 0 !important;
+  }
 }
 
 .fashion-and-electronics {

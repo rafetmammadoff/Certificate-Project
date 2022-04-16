@@ -1,3 +1,5 @@
+import { logDOM } from "@testing-library/react";
+
 document.addEventListener("DOMContentLoaded", function(e) {
 
     var circle=document.getElementsByClassName("box-b2")
@@ -11,3 +13,4 @@ document.addEventListener("DOMContentLoaded", function(e) {
     }
 
 });
+

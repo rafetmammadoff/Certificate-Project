@@ -135,22 +135,46 @@
 
 .bascet-card{
     .card{
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-
-    .quantity{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-    }
-    .update{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-    }
-    .img-area{
-        display: flex;
-        justify-content: center;
+        margin-right: 10px;
         margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        .card-item{
+            width: 95%;
+            height: 95%;
+            box-shadow: 0 0 5px 1px rgba(0,0,0,0.3);
+
+            .quantity{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+            .update{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+            .img-area{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+        }
     }
 }
+
+
+
+.dark{
+    background-color: #0e0e0e !important;
+}
+
+.white{
+    color: white !important;
+}
+
+.backg-white{
+    background-color: white !important;
 }

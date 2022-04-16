@@ -27,7 +27,7 @@ const NewProduction = () => {
   return (
     <section id="new-production">
         <div className="container custom-container">
-          <div className="row big-row">
+          <div className="row big-row white-back">
             <div className="col-lg-6 col-12 left-blog">
               <div className="tittle">
                 NEWS PRODUCTS
